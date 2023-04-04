@@ -7,7 +7,6 @@ metadata:
 spec:
   containers:
   - image: nginx
-    imagePullPolicy: Never
     name: podb
     resources:
       requests:
@@ -28,7 +27,6 @@ metadata:
 spec:
   containers:
   - image: httpd
-    imagePullPolicy: Never
     name: podb
     resources:
       requests:
@@ -49,7 +47,6 @@ metadata:
 spec:
   containers:
   - image: redis
-    imagePullPolicy: Never
     name: podc
     resources:
       requests:
