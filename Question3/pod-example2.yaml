@@ -1,0 +1,11 @@
+kind: Pod
+metadata:
+  name: app-pod
+spec:
+  containers:
+  - name: app-container
+    command:  ["/bin/sh", "-c", "echo login credentional  for database  URL: $db_host USER:$db_user PASS:$db_password", "sleep","1000"]
+    image: busybox:latest
+    envFrom:
+     - configMapRef:
+         name: app-db
